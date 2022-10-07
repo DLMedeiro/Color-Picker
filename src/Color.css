@@ -1,0 +1,13 @@
+html,
+body, div {
+    margin: 0px;
+    height: 100%;
+}
+
+.color {
+    height: 100%;
+}
+
+.colorText {
+    padding: 50px;
+}
