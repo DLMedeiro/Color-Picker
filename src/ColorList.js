@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./ColorList.css";
 
 function ColorList() {
-  const [color, setColor] = useState("");
+  const [colorString, setColorString] = useState("000000");
+  const [color, setColor] = useState("#000000");
 
   const submit = (e) => {
     e.preventDefault();
@@ -10,12 +12,13 @@ function ColorList() {
 
   const handleChange = (e) => {
     let target = e.target.value;
-    setColor(target.substring(1));
+    setColorString(target.substring(1));
+    setColor(target);
     console.log(color);
   };
 
   return (
-    <div>
+    <div className="homePage">
       <h1>This is the HomePage</h1>
       <h3>Your chosen color is: {color}</h3>
       <form onSubmit={submit}>
@@ -26,7 +29,7 @@ function ColorList() {
           onChange={handleChange}
         ></input>
       </form>
-      <Link to={`/colors/${color}`}>Color</Link>
+      <Link to={`/colors/${colorString}`}>Magic</Link>
     </div>
   );
 }

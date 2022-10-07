@@ -5,11 +5,11 @@ import Color from "./Color.js";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* <nav>
         <Nav />
       </nav> */}
-      <div>
+      <div className="test">
         <Routes>
           <Route path="/" element={<ColorList />}></Route>
           <Route path="/colors/:color" element={<Color />}></Route>
