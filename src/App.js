@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ColorList from "./ColorList.js";
+import Color from "./Color.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <Nav />
+      </nav>
+      <div>
+        <Routes>
+          <Route path="/" element={<ColorList />}></Route>
+          <Route path="/colors/:color" element={<Color />}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
