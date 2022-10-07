@@ -5,7 +5,7 @@ import Color from "./Color.js";
 
 function App() {
   return (
-    <div>
+    <div className="test">
       {/* <nav>
         <Nav />
       </nav> */}

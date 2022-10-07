@@ -22,3 +22,21 @@ body {
   justify-content: center;
 }
 
+
+.colorText a {
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:black;
+
+}
+.colorText a:hover {
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid black;
+    background: black;
+    color: white
+
+}
+
