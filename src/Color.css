@@ -9,5 +9,6 @@ body, div {
 }
 
 .colorText {
-    padding: 50px;
+    padding-top: 50px;
+    height: 50%;
 }

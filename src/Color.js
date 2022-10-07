@@ -15,6 +15,7 @@ function Color() {
         <h1>Here is your color</h1>
         <h3>Isn't it Pretty</h3>
         <h5>Yay</h5>
+        <Link to={"/"}>Home</Link>
       </div>
     </div>
   );
