@@ -4,6 +4,7 @@ This app lets you view colors and add new colors.
 
 Practice navigating React Router V6
 
+[Check it out here]("https://dlmedeiro.github.io/Color-Picker")
 
 ## Available Scripts
 
