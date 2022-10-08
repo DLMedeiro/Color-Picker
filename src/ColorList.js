@@ -52,10 +52,9 @@ function ColorList() {
       </div>
 
       <div style={{ backgroundColor: `${color}` }} className="savedColor">
-        <h3>Save Color</h3>
         <form onSubmit={submitText}>
           <input type="text" name="text" value={text}></input>
-          <button onClick={saveColor}>Save</button>
+          <button onClick={saveColor}>Save Color</button>
         </form>
       </div>
 
@@ -80,6 +79,14 @@ function ColorList() {
               );
             })}
           </div>
+          <button
+            onClick={() => {
+              localStorage.clear();
+              setSavedColors(null);
+            }}
+          >
+            Clear Saved Colors
+          </button>
         </div>
       )}
     </div>

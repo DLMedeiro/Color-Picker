@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Color.css";
 import { Link, useParams } from "react-router-dom";
-import ColorList from "./ColorList";
+// import ColorList from "./ColorList";
 
 function Color() {
   const { color } = useParams();
@@ -9,8 +9,8 @@ function Color() {
 
   useEffect(() => {
     console.log(goHome);
-    console.log(color);
-    if (color.length == 4 || color.length == 7) {
+    console.log(color.length);
+    if (color.length == 3 || color.length == 6) {
       setGoHome(false);
     }
     for (let i = 1; i < color.length; i++) {
@@ -23,12 +23,18 @@ function Color() {
         setGoHome(false);
       }
     }
-    setGoHome(true);
-  }, []);
+  }, [goHome]);
   return (
-    <div>
+    <div className="paint">
       {goHome ? (
-        <ColorList />
+        <div className="paint">
+          <div className="colorText">
+            <h1>Umm...</h1>
+            <h3>That color doesn't exist</h3>
+            <h5>Thumbs Down</h5>
+            <Link to={"/"}>Home</Link>
+          </div>
+        </div>
       ) : (
         <div
           style={{

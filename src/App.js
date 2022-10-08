@@ -6,15 +6,12 @@ import Color from "./Color.js";
 function App() {
   return (
     <div className="test">
-      {/* <nav>
-        <Nav />
-      </nav> */}
       <div className="test">
         <Routes>
           <Route path="/colors" element={<ColorList />}></Route>
           <Route path="/colors/:color" element={<Color />}></Route>
           <Route path="/" element={<Navigate to="/colors" replace />}></Route>
-          <Route path="*" element={<Navigate to="/" replace />} />
+          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
         </Routes>
       </div>
     </div>
