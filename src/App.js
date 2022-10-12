@@ -10,8 +10,7 @@ function App() {
         <Routes>
           <Route path="/colors" element={<ColorList />}></Route>
           <Route path="/colors/:color" element={<Color />}></Route>
-          <Route path="*" element={<Navigate to="/colors" replace />}></Route>
-          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+          <Route path="*" element={<Navigate replace to="/colors" />}></Route>
         </Routes>
       </div>
     </div>
